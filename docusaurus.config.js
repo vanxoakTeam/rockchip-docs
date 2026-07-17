@@ -124,7 +124,15 @@ const config = {
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    ['@easyops-cn/docusaurus-search-local', {
+      hashed: true,
+      language: ['en', 'zh'],
+      highlightSearchTermsOnTargetPage: true,
+      explicitSearchResultPath: true,
+    }],
+  ],
 };
 
 
