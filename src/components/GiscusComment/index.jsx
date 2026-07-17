@@ -7,7 +7,7 @@ export default function GiscusComment() {
 
   return (
     <Giscus
-        repo="dshanpi/Docs"
+        repo="VanxoakTeam/rockchip-docs"
         repoId="R_kgDOPa6K2A"
         category="Q&A"
         categoryId="DIC_kwDOPa6K2M4CuHAB"
