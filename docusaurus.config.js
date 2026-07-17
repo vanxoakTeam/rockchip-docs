@@ -5,15 +5,6 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from 'prism-react-renderer';
-import path from 'path';
-import { fileURLToPath, pathToFileURL } from 'url';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const mcpIndexerPath = pathToFileURL(path.join(__dirname, 'mcp-docs-indexer.mjs')).href;
-const mcpSearchProviderPath = pathToFileURL(path.join(__dirname, 'mcp-basic-search-provider.mjs')).href;
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '万象奥科',
@@ -54,23 +45,6 @@ const config = {
       },
     },
   },
-
-  plugins: [
-    [
-      'docusaurus-plugin-mcp-server',
-      {
-        server: {
-          name: 'rockchip-docs',
-          version: '0.0.0',
-        },
-        indexers: [mcpIndexerPath],
-        search: mcpSearchProviderPath,
-        excludeRoutes: [
-          '/en/**',
-        ],
-      },
-    ],
-  ],
 
   presets: [
     [
