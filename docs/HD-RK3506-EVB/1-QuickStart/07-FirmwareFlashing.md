@@ -67,13 +67,13 @@ sidebar_position: 7
 
   使用USB-C数据线，将电脑和开发板USB Device进行连接。
 
-<img src={require('./images/07-firmwareflashing-11.png').default} alt="image.png" style={{display: 'block', margin: '20px auto', maxWidth: '80%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/evb-usb.png').default} alt="image.png" style={{display: 'block', margin: '20px auto', maxWidth: '80%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
 ### 2.4 进入Loader模式
 
   使用镊子短接RECOVERY按键，然后在使用Type-c连接上PC机与USB-Device，待电脑上位机RKDevTool软件检测到设备，显示"发现一个LOADER设备"后，再断开RECOVERY短接工具。
 
-<img src={require('./images/07-firmwareflashing-12.png').default} alt="RECOVER 示意图" style={{display: 'block', margin: '20px auto', maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/maskrom.png').default} alt="RECOVER 示意图" style={{display: 'block', margin: '20px auto', maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
 <img src={require('./images/07-firmwareflashing-13.png').default} alt="image.png" style={{display: 'block', margin: '20px auto', maxWidth: '80%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
@@ -107,7 +107,7 @@ sidebar_position: 7
 
   在开发过程中，我们有可能会碰到无法进入**Loader**模式的情况，例如系统固件损坏不能正常进入系统。这时我们则需要采用MASKROM模式进行烧写，用跳线帽短接核心板上**MASKROM**焊接点，然后重新上电。**MASKROM**位置如下图：
 
-<img src={require('./images/07-firmwareflashing-03.png').default} alt="MASKROM 示意图" style={{display: 'block', margin: '20px auto', maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/maskrom.png').default} alt="MASKROM 示意图" style={{display: 'block', margin: '20px auto', maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
   发现MASKROM设备后拔出跳线帽，然后点接执行刷机，软件操作与Loade模式一样。需注意的是，**此模式刷机必须勾选Loader 分区。**
 

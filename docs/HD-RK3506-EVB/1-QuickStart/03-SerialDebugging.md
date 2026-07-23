@@ -20,7 +20,7 @@ sidebar_position: 3
 | 奇偶校验位 | 无 |
 | 流控 | 关闭所有流控 |
 
-<img src={require('./images/03-serialdebugging-01.png').default} alt="TTL调试串口位置" style={{display: 'block', margin: '20px auto', maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/debug.png').default} alt="TTL调试串口位置" style={{display: 'block', margin: '20px auto', maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
   使用TTL 调试串口工具，连接HD-RK3506-EVB评估板调试串口和电脑，从“设备管理器”中查看串口端口号，实际串口号以电脑识别到的端口号为准，图示只做参考。
 

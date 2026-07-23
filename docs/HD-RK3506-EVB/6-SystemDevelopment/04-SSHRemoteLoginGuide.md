@@ -17,7 +17,7 @@ sidebar_position: 4
 
   HD-RK3506-EVB评估套件标配2个以太网口，分布如下所示。
 
-<img src={require('./images/04-sshremoteloginguide-01.png').default} alt="image.png" style={{display: 'block', margin: '20px auto', maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/eth.png').default} alt="image.png" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
   烧写万象奥科提供的出厂固件，未插入网线前，系统默认不会为网络节点分配IP，在插入网线后，系统会为ETH0分配默认的固定IP地址（192.168.1.10），用户可以使用该IP登录SSH后，使用ifconfig命令查看IP地址，如下所示。
 

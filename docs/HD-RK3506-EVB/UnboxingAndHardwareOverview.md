@@ -27,16 +27,18 @@ sidebar_position: 1
 
 ## 2. 硬件接口速览
 
+<img src={require('./images/evb.png').default} alt="开箱清单" style={{display: 'block', margin: '20px auto', maxWidth: '80%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}} />
+
 ### 2.1 USB供电/烧录接口
 
   HD-RK3506-EVB板通过TYPE-C端子来供电，额定电压为5V。电源接口示意图如下所示。
-<img src={require('./images/unboxingandhardwareoverview-07.png').default} alt="开箱清单" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}} />
+<img src={require('./images/usb.png').default} alt="开箱清单" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}} />
 
 ### 2.2 指示灯
 
   HD-RK3506-EVB板中有2个功能指示灯，指示灯分别为运行指示和电源指示，方便在任何的情况下，了解系统的运行状况，具体见下表中描述。
 
-<img src={require('./images/unboxingandhardwareoverview-06.png').default} alt="指示灯" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/led.png').default} alt="指示灯" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
 
 | 指示灯 | 默认功能 | 描述 |
@@ -49,9 +51,10 @@ sidebar_position: 1
   HD-RK3506-EVB板提供有1个Type-C烧录口，1个Recovery排针接口，1个Maskrom排针接口，用于系统调试、启动配置等。各接口相关描述如下。
 
 <div style={{display: 'flex', justifyContent: 'center', gap: '100px', margin: '20px 0'}}>
-  <img src={require('./images/unboxingandhardwareoverview-07.png').default} alt="USB供电烧录" style={{maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
-  <img src={require('./images/unboxingandhardwareoverview-08.png').default} alt="12s" style={{maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+  <img src={require('./images/usb.png').default} alt="USB供电烧录" style={{maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+  <img src={require('./images/debug.png').default} alt="12s" style={{maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 </div>
+
 
 
 | 丝印 | 默认功能 | 描述 |
@@ -64,7 +67,7 @@ sidebar_position: 1
 
   在HD-RK3506-EVB，提供有1个3Pin 2.54mm间距排针，此排针为RK3506核心板的UART 3.3V TTL电平调试串口，示意图及引脚定义如下。
 
-<img src={require('./images/unboxingandhardwareoverview-09.png').default} alt="12s" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/debug.png').default} alt="12s" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
 
 | 引脚 | 名称 | 描述 | 引脚电平 |
@@ -77,7 +80,7 @@ sidebar_position: 1
 
   HD-RK3506-EVB底板有1路USB2.0 Host接口，接口采用单层Type-A USB插座，可供用户外接USB Device设备。Type-A USB插座接口示意图及引脚定义如下所示。
 
-<img src={require('./images/unboxingandhardwareoverview-10.png').default} alt="13214.png" style={{display: 'block', margin: '20px auto', maxWidth: '20%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/usbhost.png').default} alt="13214.png" style={{display: 'block', margin: '20px auto', maxWidth: '20%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
 
 | 引脚 | 名称 | 描述 |
@@ -92,19 +95,19 @@ sidebar_position: 1
 
   HD-RK3506-EVB评估板对外提供2路百兆以太网接口，均支持10M/100M通信 (默认出厂固件中，ETH0设置固定IP，ETH1设置为动态IP)。以太网接口采用标准RJ45插座，其示意图及引脚定义如下所示。
 
-<img src={require('./images/unboxingandhardwareoverview-11.png').default} alt="网口" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/eth.png').default} alt="网口" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
 ### 2.7 显示接口
 
   HD-RK3506-EVB评估板支持RGB LCD显示 或 MIPI LCD显示，可任选一种接口接入屏幕显示。
 
-
+<img src={require('./images/ui.png').default} alt="网口" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
 ### 2.8 TF 卡接口
 
   HD-RK3506-EVB评估板预留了一个TF卡座（存储为EMMC版本时，此接口不支持）
 
-<img src={require('./images/unboxingandhardwareoverview-12.png').default} alt="TF卡" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/tf.png').default} alt="TF卡" style={{display: 'block', margin: '20px auto', maxWidth: '25%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
 
 | 引脚 | 名称 | 描述 |
@@ -123,7 +126,7 @@ sidebar_position: 1
 
   HD-RK3506-EVB评估板将剩余未使用的RM\_IO，GPIO等接口通过40Pin 2.54mm间距双排针引出，方便用户进行接口扩展及重定义来做灵活开发。IO扩展排针示意图及引脚定义如下。
 
-<img src={require('./images/unboxingandhardwareoverview-02.png').default} alt="扩展GPIO" style={{display: 'block', margin: '20px auto', maxWidth: '40%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+<img src={require('./images/gpio.png').default} alt="扩展GPIO" style={{display: 'block', margin: '20px auto', maxWidth: '40%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
 
 
 | 引脚 | 名称 | 默认功能 | 是否支持RM_IO | RM_IO编号 | 引脚电平 | 备注 |

@@ -64,9 +64,19 @@ flowchart TD
 
   HD-RK3506-EVB 使用 32pin 同向排线连接 万象奥科适配的 7寸MIPI LCD屏幕
 
+<div style={{display: 'flex', justifyContent: 'center', gap: '10px', margin: '20px 0'}}>
+  <img src={require('./images/mipi_lcd.jpg').default} alt="调试串口" style={{maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+  <img src={require('./images/mipi.jpg').default} alt="12s" style={{maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+</div>
+
 #### RGB LCD
 
   HD-RK3506-EVB 使用 40pin 同向排线连接 万象奥科适配的 5寸RGB LCD屏幕
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '10px', margin: '20px 0'}}>
+  <img src={require('./images/rgb_lcd.jpg').default} alt="调试串口" style={{maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+  <img src={require('./images/rgb.jpg').default} alt="12s" style={{maxWidth: '50%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}}/>
+</div>
 
   
 
